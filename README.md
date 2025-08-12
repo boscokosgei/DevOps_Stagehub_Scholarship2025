@@ -1,1 +1,0 @@
-# DevOps_Stagehub_Scholarship2025
