@@ -1,4 +1,9 @@
-## Steps to Get Started in LAMP Stack
+# Steps to Get Started in LAMP Stack
+LAMP Stack consist of the following:Will be exploring how they work together to deploy a website
+L-Linux Operating system that is used in many application
+A-Apache
+M-Mysql
+P-Php
 
 # Step 1. Launching an EC2 instance on AWS Account
 Go to account console and search for EC2 then Launch an EC2 instance by giving a name and setting t2.micro,choosing ubuntu image and setting security groups to enable access via Public IP.
@@ -11,10 +16,11 @@ Go to account console and search for EC2 then Launch an EC2 instance by giving a
     sudo chmod 400 LAMP.pem
 ```
 # Step 2. SSH Into EC2 Instance using Public IP
+By default the username will be ubuntu that will be used to access the EC2 Instance
 ```sh
      ssh -i LAMP.pem ubuntu@public_Ip 
 ```
-<img src="/home/bosco/development/code/DevOps_Stagehub_Scholarship2025/LAMP_Stack in AWS/img/STegHUB Scholarship/Accessing Instance via Terminal.png">
+![Image](Accessing%20Instance%20via%20Terminal.png)
 
 # Step 3. Configuring Apache Web Server
 After Connecting to the EC2 instance apache server is installed
@@ -26,7 +32,8 @@ Veryfying that apache server is running
 ```sh
    sudo systemctl status apache2
 ```
-<ing src="/home/bosco/development/code/DevOps_Stagehub_Scholarship2025/LAMP_Stack in AWS/img/STegHUB Scholarship/mysql-serverInstallation.png">
+![Image](Install%20Apache2.png)
+
 
 # Step 4. Accessing Apache Server Using Public IP
 Using Chrome browser apacher server can be accesssed using the following url
@@ -34,13 +41,14 @@ Using Chrome browser apacher server can be accesssed using the following url
 ```sh
    http://98.87.102.21:80
 ```
- <img src="/home/bosco/development/code/DevOps_Stagehub_Scholarship2025/LAMP_Stack in AWS/img/STegHUB Scholarship/apache-server.png">
+ ![Image](apache-server.png)
 
  # Step 5. Installing Mysql Database
  Inside the EC2 Instance 
  ```sh 
     sudo apt install mysql-server
  ```
+ ![Image](mysql%20status.png)
  After Successful installation of mysql access it through the EC2 instance and create a database user
  ```sh
     sudo mysql
@@ -52,7 +60,7 @@ Using Chrome browser apacher server can be accesssed using the following url
  ```sh 
     sudo apt install php libapache2-mod-php php-mysql
  ```
-  <img src="/home/bosco/development/code/DevOps_Stagehub_Scholarship2025/LAMP_Stack in AWS/img/STegHUB Scholarship/Installing PHP.png">
+  ![Image](Installing%20PHP.png)
 
  Confirming php has been installed
  ```sh
@@ -64,4 +72,4 @@ Using Chrome browser apacher server can be accesssed using the following url
  ```sh
     sudo mkdir /var/www/html/lampstack
  ```
- <img src="/home/bosco/development/code/DevOps_Stagehub_Scholarship2025/LAMP_Stack in AWS/img/STegHUB Scholarship/lampstack .png">
+ <![Image](lampstack%20.png)
