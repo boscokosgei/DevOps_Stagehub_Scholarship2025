@@ -2,8 +2,9 @@
 
 # Step 1. Launching an EC2 instance on AWS Account
 Go to account console and search for EC2 then Launch an EC2 instance by giving a name and setting t2.micro,choosing ubuntu image and setting security groups to enable access via Public IP.
- <img src="/home/bosco/development/code/DevOps_Stagehub_Scholarship2025/LAMP_Stack in AWS/img/STegHUB 
- Scholarship/Successful Instance Initialization.png">
+ 
+![Image](Successful%20Instance%20Initialization.png)
+ faced a challenge accessing the server but managed to figure out it was because of the permission file.
 
 # Step 2. Giving Permission to Pem file
 ```sh
