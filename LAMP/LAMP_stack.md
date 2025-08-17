@@ -73,3 +73,7 @@ Using Chrome browser apacher server can be accesssed using the following url
     sudo mkdir /var/www/html/lampstack
  ```
  <![Image](lampstack%20.png)
+
+ # Step 8. Accessing PHP information Website
+ After configuring everything correctly, we should be able to access the website on browser using public Ip address
+ ![Image](php%20Loading.png)
