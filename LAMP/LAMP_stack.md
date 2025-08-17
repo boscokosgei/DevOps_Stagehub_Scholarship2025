@@ -1,9 +1,9 @@
 # Steps to Get Started in LAMP Stack
 LAMP Stack consist of the following:Will be exploring how they work together to deploy a website
-L-Linux Operating system that is used in many application
-A-Apache
-M-Mysql
-P-Php
+- L-Linux Operating system that is used in many application
+- A-Apache
+- M-Mysql
+- P-Php
 
 # Step 1. Launching an EC2 instance on AWS Account
 Go to account console and search for EC2 then Launch an EC2 instance by giving a name and setting t2.micro,choosing ubuntu image and setting security groups to enable access via Public IP.
