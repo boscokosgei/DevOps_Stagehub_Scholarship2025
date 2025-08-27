@@ -18,3 +18,25 @@ add the github repo to AWS EC2 Instnace
 ```sh
   git clone git@github.com:boscokosgei/DevOps_Stagehub_Scholarship2025.git
 ```
+## Step 3. Installing Nginx Web Server
+To install nginx server we begin by running the following commands
+```sh 
+   sudo apt install nginx -y
+   sudo systemctl status nginx
+```
+After successful installation, nginx can be accessed on the browser using public ip address as shown below
+![Images](LEMP-NGINX%20running.png)
+
+## Step 4. Installing MYSQL
+To install mysql server for database management
+use the following commands
+```sh
+   sudo apt install mysql-server 
+```
+Then login to mysql and create a user and database
+![Images](Create%20User%20on%20Mysql_DB.png)
+
+## Step 5. Installing Secure Mysql
+To ensure security for the db is maintained a secure mysql is installed
+as shown below
+
