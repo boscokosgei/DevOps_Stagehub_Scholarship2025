@@ -32,3 +32,53 @@ SQL is a standard language for accessing and manipulating databases.
 	DROP INDEX - deletes an index
 
 ## Nano Commands and Vi
+Nano:
+	Easy to use and master.
+	Nano has most of the shortcuts listed at the bottom of the window, making it extremely simple to use.
+	Search function.
+	Search and replace.
+	"Goto line" command.
+	Automatic indentation.
+Syntax:
+Create and Open a New File in Nano Editor
+```sh
+   nano new_filename
+```
+Save a file in Nano Editor
+```sh
+   press Ctrl+o
+```
+Cut and Past in Nano Editor
+To cut paste in a file. Ctrl+o is used to cut and Ctrl+u is used to paste the text.
+
+Vim:
+	Tough to get started with and master. The editing and command modes will confuse beginners.
+	Session recovery.
+	Split screen.
+	Tab expansion.
+	Completion commands.
+	Syntax coloring.
+
+Vi Syntax
+How to Open VI Editor
+To open vi editors, we just need to type the command mentioned below.
+```sh
+   vi [file_name]
+```
+How to insert in vi editor in Linux :
+To enter in insert mode in vi editor in Linux we just need to press `i` on our keyboard and we will be in insert mode. we can just start entering our content. 
+
+Moving within a File (Navigation) in Vi Editor : 
+To move around within a file without affecting text must be in command mode (press Esc twice). 
+
+Save and Exit in Vi Editor in Linux:
+Need to press [Esc] key followed by the colon (:) before typing the following commands:
+
+Commands 	Description
+q          	     Quit
+q!	            Quit without saving changes i.e. discard changes.
+r [file_name]	Read data from file called [file_name]
+wq	            Write and quit (save and exit).
+w	            Write to file called [file_name] (save as).
+w!	            Overwrite to file called [file_name] (save as forcefully).
+!cmd	        Runs shell commands and returns to Command mode.
